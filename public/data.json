@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "AI Resume Builder",
+    "description": "Create professional resumes with AI suggestions and ATS optimization.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "https://lfs.creativefabrica.com/web/pages/studio/features/ai-resume-builder/AI_Resume_Builder_Image1.png"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Generator",
+    "description": "Build a stunning personal portfolio website in minutes.",
+    "price": 19.99,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best",
+    "features": ["Custom domains", "Responsive design", "SEO optimized"],
+    "icon": "https://lfs.creativefabrica.com/web/pages/studio/features/portfolio-maker/Studio%20Tool%20Page%20Portfolio%20Maker%20-%20paragraph%202.png"
+  },
+  {
+    "id": 3,
+    "name": "Social Media Kit",
+    "description": "Design social media posts and branding assets easily.",
+    "price": 7.99,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["500+ templates", "Drag & drop editor", "Export in HD"],
+    "icon": "https://www.socialmediakitcultuur.nl/wp-content/uploads/2021/12/Social-media-kit-logo-3.png"
+  },
+  {
+    "id": 4,
+    "name": "AI Copywriting Tool",
+    "description": "Generate marketing copy, blogs, and ads using AI.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Blog generation", "Ad copy", "SEO keywords"],
+    "icon": "https://tse2.mm.bing.net/th/id/OIP.KrdXtr0TcYUa5tjYiKtvJQHaEK?pid=Api&h=220&P=0"
+  },
+  {
+    "id": 5,
+    "name": "Design Assets Pack",
+    "description": "Access thousands of icons, illustrations, and UI kits.",
+    "price": 29.99,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best",
+    "features": ["10k+ assets", "Figma compatible", "Commercial license"],
+    "icon": "https://www.creativefabrica.com/wp-content/uploads/2023/07/18/y2k-element-asset-pack-Graphics-74809985-1.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Startup Toolkit",
+    "description": "Everything you need to launch your startup quickly.",
+    "price": 49.99,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Pitch decks", "Business templates", "Legal docs"],
+    "icon": "https://tse4.mm.bing.net/th/id/OIP.I0vXOreZf9eidOBzIEdunQHaGd?pid=Api&h=220&P=0"
+  }
+]
