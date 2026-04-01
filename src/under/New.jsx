@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Check } from 'lucide-react';
 
-const New = ({mod}) => {
+const New = ({mod, carts, setCarts}) => {
     console.log(mod)
      const [buy, setBuy]= useState(false)
      const handleBuy=()=>{
        setBuy(true) 
+       setCarts([...carts, mod]);
+
      }
     return (
         <div className=' border p-8'>

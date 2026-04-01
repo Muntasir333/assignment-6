@@ -6,6 +6,7 @@ import Navbar from './Navbar/Navbar'
 import Success from './success/Success'
 import Cart from './assets/cart/Cart'
 import { useState } from 'react'
+import Main from './main/Main'
 
 const getData = async ()=>{
   const res = await fetch("/data.json")
@@ -16,6 +17,8 @@ const dataPromise = getData();
 
 function App() {
   const [active, setActive] = useState('model')
+  const [carts, setCarts] = useState([]);
+  console.log(carts)
 
 
   return (
@@ -23,13 +26,14 @@ function App() {
   <Navbar></Navbar>
   <Hero></Hero>
   <Success></Success>
+  <Main></Main>
   {/* name of each tab group should be unique */}
 <div className="tabs tabs-box justify-center bg-transparent">
   <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label="Products" defaultChecked onClick={()=>setActive("model")}/>
-  <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label="Cart(0)" onClick={()=>setActive("cart")} />
+  <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label={`Cart(${carts.length})`} onClick={()=>setActive("cart")} />
 </div>
-  {active ==="model" ? <Model dataPromise={dataPromise}></Model> : null}
-  {active ==="cart" ?   <Cart></Cart> : null}
+  {active ==="model" ? <Model carts={carts} setCarts={setCarts} dataPromise={dataPromise}></Model> : null}
+  {active ==="cart" ?   <Cart carts={carts} setCarts={setCarts}></Cart> : null}
 
     </>
   )
