@@ -15,7 +15,7 @@ toast.success("Items deleted successfully!");
 }
     const totalPrice = carts.reduce((sum, cart)=>sum + cart.price, 0);
     return (
-        <div className='w-300 m-auto space-y-4 p-5'>
+        <div className='lg:w-300 m-auto space-y-4 p-5'>
             <h2 className='text-3xl font-bold text-[#101727]'>Your Cart</h2>
             {
                 carts.length === 0 ? (<p className='text-xl font-bold text-[#101727] text-center'>Cart is Empty</p>) : (<>

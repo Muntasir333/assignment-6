@@ -1,11 +1,14 @@
 import React from 'react';
 import Dot from '../pic/Group 5 (1).png'
 import Zero from '../pic/banner.png'
+import { Play } from 'lucide-react';
+
+
 
 
 const Hero = () => {
     return (
-        <div className='flex flex-col lg:flex-row justify-center gap-16 px-6 lg:px-20 py-10'>
+        <div className='flex flex-col lg:flex-row justify-center gap-16 md:justify-center md:items-center px-6 lg:px-20 py-10'>
             <div className='flex flex-col justify-center space-y-5 '>
                 <div className='flex shrink-0 gap-2 items-center border-0 bg-gray-300 rounded-2xl w-[30vh]'>
                     <img className='w-4 h-4' src={Dot} alt="" />
@@ -19,7 +22,7 @@ software—all in one place. Start creating faster today.<br></br>Explore Produc
                 </div>
                 <div className='flex gap-3'>
                     <button className='btn btn-primary'>Explore Product</button>
-                    <button className=' btn btn-outline'>Watch Demo</button>
+                    <button className=' btn btn-outline'> <Play />Watch Demo</button>
                 </div>
             </div>
             <div>

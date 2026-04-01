@@ -11,7 +11,7 @@ const New = ({mod, carts, setCarts}) => {
       toast.error("Items are already in the cart")
       return;
      }
-     
+
        setBuy(true) 
        setCarts([...carts, mod]);
        toast.success("Items added to cart!");
@@ -19,7 +19,7 @@ const New = ({mod, carts, setCarts}) => {
      }
    
     return (
-        <div className=' border p-8'>
+        <div className=' border p-8 space-y-2'>
                         <div>
                         <div className=''><p className='text-right pr-3 bg-amber-300 w-20 rounded-3xl translate-x-60 '>{mod.tagType}</p>
                          <img className='h-10 w-10 border rounded-4xl' src={mod.icon} alt="" />

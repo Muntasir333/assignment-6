@@ -9,6 +9,7 @@ import { useState } from 'react'
 import Main from './main/Main'
 import Started from './assets/Started/Started'
 import Offer from './assets/offer/Offer'
+import Footer from './footer/Footer'
 
 const getData = async ()=>{
   const res = await fetch("/data.json")
@@ -25,12 +26,12 @@ function App() {
 
   return (
     <>
-  <Navbar></Navbar>
+  <Navbar Carts={carts}></Navbar>
   <Hero></Hero>
   <Success></Success>
   <Main></Main>
   {/* name of each tab group should be unique */}
-<div className="tabs tabs-box justify-center bg-transparent">
+<div className="tabs tabs-box justify-center bg-transparent mb-3">
   <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label="Products" defaultChecked onClick={()=>setActive("model")}/>
   <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label={`Cart(${carts.length})`} onClick={()=>setActive("cart")} />
 </div>
@@ -39,6 +40,7 @@ function App() {
 
   <Started></Started>
   <Offer></Offer>
+  <Footer></Footer>
 
     </>
   )

@@ -4,11 +4,11 @@ import React from 'react';
 const Success = () => {
     return (
         <div className='bg-violet-800 grid grid-cols-1 lg:grid-cols-3 items-center p-20 text-center gap-6 mb-28'>
-            <div>
+            <div className='border-r border-gray-300 pr-4'>
                 <h2 className='text-6xl font-bold text-white'>50K+</h2>
                 <p className='text-xl text-white'>Active Users</p>
             </div>
-            <div>
+            <div className='border-r border-gray-300 pr-4'>
                 <h2 className='text-6xl font-bold text-white'>200K+</h2>
                 <p className='text-xl text-white'>Premium Tools</p>
             </div>

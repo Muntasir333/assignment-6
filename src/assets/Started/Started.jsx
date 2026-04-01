@@ -10,7 +10,7 @@ const Started = () => {
                 <h2 className='text-5xl font-bold text-[#101727] pt-25 '>Get Started in 3 Steps</h2>
             <p className='text-[#627382]'>Start using premium digital tools in minutes, not hours.</p>
             </div>
-            <div className=' bg-[#F9FAFC] grid grid-cols-3 gap-5 w-300 mx-auto pb-25 '>
+            <div className=' bg-[#F9FAFC] grid grid-cols-1 lg:grid-cols-3 gap-5 w-max lg:w-300 mx-auto pb-25 '>
                 <div className='relative p-8 border border-gray-100 bg-white'>
                     <h2 className='absolute text-xl text-white bg-violet-800 rounded-full top-4 right-4 mb-6'>01</h2>
                     <div className='flex flex-col justify-center items-center'>

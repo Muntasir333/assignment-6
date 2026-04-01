@@ -3,7 +3,7 @@ import { Check } from 'lucide-react';
 
 const Offer = () => {
     return (
-        <div className='bg-white w-300 mx-auto space-y-5'>
+        <div className='bg-white w-full lg:w-300 mx-auto space-y-5'>
             <div className='text-center space-y-3'>
                 <h2 className='text-5xl font-bold text-[#101727] pt-25 '>Simple, Transparent Pricing</h2>
                 <p className='text-[#627382]'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
