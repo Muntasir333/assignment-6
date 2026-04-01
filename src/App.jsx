@@ -8,6 +8,7 @@ import Cart from './assets/cart/Cart'
 import { useState } from 'react'
 import Main from './main/Main'
 import Started from './assets/Started/Started'
+import Offer from './assets/offer/Offer'
 
 const getData = async ()=>{
   const res = await fetch("/data.json")
@@ -37,6 +38,7 @@ function App() {
   {active ==="cart" ?   <Cart carts={carts} setCarts={setCarts}></Cart> : null}
 
   <Started></Started>
+  <Offer></Offer>
 
     </>
   )
