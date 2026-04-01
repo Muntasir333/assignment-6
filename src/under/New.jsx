@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Check } from 'lucide-react';
+import { toast } from 'react-toastify';
 
 const New = ({mod, carts, setCarts}) => {
     console.log(mod)
@@ -7,6 +8,7 @@ const New = ({mod, carts, setCarts}) => {
      const handleBuy=()=>{
        setBuy(true) 
        setCarts([...carts, mod]);
+       toast.success("Items added to cart!");
 
      }
     return (
